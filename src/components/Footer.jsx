@@ -4,9 +4,9 @@ import truck from "./../utils/truck.png";
 // import TwitterIcon from '@mui/icons-material/Twitter';
 // import FacebookIcon from '@mui/icons-material/LinkedIn';
 // import InstagramIcon from '@mui/icons-material/Instagram';
-
-
-
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Container = styled.div`
   /* grid-template-columns: repeat(4, 1fr); */
@@ -28,9 +28,7 @@ const Img = styled.img`
   height: 85px;
   width: 121px;
 `;
-const ContactUs = styled.div`
-  
-`;
+const ContactUs = styled.div``;
 
 const Title = styled.h1`
   margin-top: 10px;
@@ -53,6 +51,11 @@ const Info = styled.div`
   color: #666870;
 `;
 
+const SocialItem= styled.div`
+justify-content: space-between;
+
+`
+
 const Footer = () => {
   return (
     <Container>
@@ -61,18 +64,25 @@ const Footer = () => {
         <Title>Contact Us</Title>
         <Info>
           Lorem Ipsum Pvt Ltd.5/1, Magalton <br /> Road, Phartosh Gate near YTM{" "}
-          <br /> Market, XYZ-343434 <br/> <br/> example2020@gmail.com <br/> <br/>(904) 443-0343
+          <br /> Market, XYZ-343434 <br /> <br /> example2020@gmail.com <br />{" "}
+          <br />
+          (904) 443-0343
         </Info>
       </ContactUs>
       <More>
         <Title>More</Title>
-        <Info>About Us <br/> <br/> Products <br/> <br/> Career <br/> <br/> Contact Us</Info>
+        <Info>
+          About Us <br /> <br /> Products <br /> <br /> Career <br /> <br />{" "}
+          Contact Us
+        </Info>
       </More>
       <SocialLinks>
         <Title>Social Links</Title>
-        {/* <InstagramIcon/> */}
-        {/* <TwitterIcon/> */}
-        {/* <FacebookIcon/> */}
+        <SocialItem>
+          <InstagramIcon style={{ marginRight: '15px' , fontSize: '20px' }} />
+          <TwitterIcon  style={{ marginRight: '15px' ,fontSize: '20px'}}/>
+          <FacebookIcon style={{  fontSize: '20px' }}/>
+        </SocialItem>
       </SocialLinks>
     </Container>
   );
