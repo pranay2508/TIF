@@ -45,7 +45,7 @@ const SecondHeader = styled.h2`
   font-size: 15px;
   font-weight: 100;
   font-family: "Open Sans";
-  color: black;
+  color:#666870;
 `;
 const Button = styled.input`
 height: 63px;

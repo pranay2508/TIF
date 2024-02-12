@@ -27,6 +27,8 @@ const Title = styled.div`
   font-size: 40px;
   font-weight: bolder;
 `;
+const Para = styled.div`
+color:#666870`;
 
 const Middle = () => {
   return (
@@ -34,8 +36,8 @@ const Middle = () => {
       <Img src={middiv} alt />
       <RightContainer>
         <Title> About Us</Title>
-        <p>
-          {" "}
+        <Para>
+          
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -43,7 +45,7 @@ const Middle = () => {
           in <br/> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.<br/> Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui <br/> officia deserunt mollit anim id est laborum.
-        </p>
+        </Para>
       </RightContainer>
     </Container>
   );
