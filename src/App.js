@@ -1,8 +1,10 @@
-
+import Main from "./components/Main";
+import Middle from "./components/Middle";
 function App() {
   return (
     <div >
-     hii
+     <Main/>
+     <Middle/>
     </div>
   );
 }
