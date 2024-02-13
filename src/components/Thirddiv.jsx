@@ -15,9 +15,9 @@ const MainContainer = styled.div`
 const MainCard = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Allow cards to wrap */
-  max-width: 1200px; /* Set a maximum width for the cards */
-  margin-top: 20px; /* Adjust margin */
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin-top: 20px; 
 `;
 
 const MainTitle = styled.div`
@@ -36,7 +36,7 @@ const Card = styled.div`
   padding: 20px;
   width: calc(33.33% - 20px);
   box-sizing: border-box;
-  margin-bottom: 20px; /* Adjust margin */
+  margin-bottom: 20px; 
   
   @media (max-width: 768px) {
     width: calc(50% - 20px);

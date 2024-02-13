@@ -7,33 +7,33 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Container = styled.div`
-  padding: 2rem 1rem; /* Adjust padding for mobile */
+  padding: 2rem 1rem;
   background: #f7f8fa;
   display: flex;
-  flex-direction: column; /* Change direction to column for mobile */
-  align-items: center; /* Center content horizontally for mobile */
-  
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 3rem; /* Adjust padding for desktop */
+    padding: 2rem 3rem;
   }
 `;
 
 const Img = styled.img`
-  margin-top: 20px; /* Adjust margin for mobile */
+  margin-top: 20px;
   height: 85px;
   width: 121px;
-  
+
   @media (min-width: 768px) {
     margin-top: 0;
   }
 `;
 
 const ContactUs = styled.div`
-  margin-top: 20px; /* Adjust margin for mobile */
+  margin-top: 20px;
   text-align: center;
-  
+
   @media (min-width: 768px) {
     margin-top: 0;
     text-align: left;
@@ -43,44 +43,60 @@ const ContactUs = styled.div`
 const Title = styled.h1`
   margin-top: 10px;
   font-family: "Source Sans Pro";
-  font-size: 20px; /* Adjust font size for mobile */
+  font-size: 20px;
   font-weight: 600;
   color: #0e2368;
-  
+
   @media (min-width: 768px) {
     font-size: 24px;
   }
 `;
 
 const Info = styled.div`
-  margin-top: 10px; /* Adjust margin for mobile */
-  font-size: 14px; /* Adjust font size for mobile */
+  margin-top: 10px;
+  font-size: 14px;
   color: #666870;
-  
+
   @media (min-width: 768px) {
     font-size: 16px;
   }
 `;
 
 const SocialLinks = styled.div`
-  margin-top: 20px; /* Adjust margin for mobile */
-  display: flex;
-  justify-content: center; /* Center content horizontally for mobile */
+  /* margin-top: 20px; */
+  margin-bottom:60px;
+  flex-direction: column; 
+  align-items: center; 
   
+
   @media (min-width: 768px) {
+    flex-direction: row; 
     margin-top: 0;
   }
 `;
 
 const SocialItem = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px; /* Adjust margin for mobile */
   
+  padding-left: 70px;
+ 
+  margin-top: 10px; 
+  /* padding-right: 100px; */
+
   @media (min-width: 768px) {
+    margin-top: 0;
     margin-right: 20px;
   }
+`;
+
+const SocialTitle = styled.h2`
+
+font-size: 22px;
+padding-left: 40px;
+  font-family: "Source Sans Pro";
+  /* font-size: 18px; */
+  font-weight: 600;
+  color: #0e2368;
+  margin-bottom: 10px; 
 `;
 
 const Footer = () => {
@@ -104,7 +120,8 @@ const Footer = () => {
         </Info>
       </ContactUs>
       <SocialLinks>
-        <Title>Social Links</Title>
+        <SocialTitle>Social Links</SocialTitle>
+        <Info>
         <SocialItem>
           <InstagramIcon style={{ fontSize: "20px" }} />
         </SocialItem>
@@ -114,10 +131,11 @@ const Footer = () => {
         <SocialItem>
           <FacebookIcon style={{ fontSize: "20px" }} />
         </SocialItem>
+        </Info>
+        
       </SocialLinks>
     </Container>
   );
 };
 
 export default Footer;
-
